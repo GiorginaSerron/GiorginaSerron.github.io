@@ -1,0 +1,40 @@
+* {
+    background-color: #96e1d6;
+    font-family: fantasy;
+}
+
+#cabecera {
+    text-align: center;
+    color: #cb12ac;
+}
+
+#foto {
+    border-radius: 100px;
+}
+
+
+#presentation {
+    position: relative;
+    width: 50%;
+    bottom: -20px;
+    right: -500px;
+    top: -150px;
+    text-align: center;
+}
+
+.imagen {
+    text-align: center;
+    width: 250px;
+    height: 250px ;
+    position: relative;
+    right: -100px;
+}
+
+
+
+.referencias {
+    position: relative;
+    width: 50%;
+    right: -800px;
+    text-align: center;
+}
