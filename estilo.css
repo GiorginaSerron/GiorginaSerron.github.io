@@ -1,70 +1,85 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-*{
-    font-family: Poppins;
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-#cabecera {
-    text-align: center;
-    color: turquoise;
-    margin-bottom: 5%;
+/* Menú */
+.navbar {
+  background-color: #222;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-
-
-.imagen{
-    float: left;
-    margin-right: 0%;
-    position: relative;
-    margin-bottom: 10%;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
 }
 
-#presentation{
-    text-align: center;
-    position: relative;
-    margin-right: 0;
-    width: 100%;
-    margin-top: 10%;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-p {
-    word-wrap: break-word; /* Permite que las palabras largas se quiebren */
+.navbar a:hover {
+  color: #00bcd4;
 }
 
-
-.referencias{
-    text-align: center;
-    margin-bottom: 5%;
+/* Sección principal: imagen izquierda, texto derecha */
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+  background-color: white;
 }
 
-@media screen and (max-width: 400px){
-    .imagen{
-        margin-left: 2%;
-        margin-right: 0%;
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 50%;
-    }
-    #presentation{
-        margin: 5%;
-        width: 90%;
-
-    }
+.image-container {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
 }
 
-@media screen and (max-width: 768px){
-    .imagen{
-        margin-left: 2%;
-        margin-right: 0%;
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 50%;
-    }
-    #presentation{
-        margin: 5%;
-        width: 90%;
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+}
 
-    }
+.text-container {
+  flex: 2;
+  padding-left: 2em;
+}
+
+.text-container h1 {
+  margin-top: 0;
+  font-size: 2em;
+  color: #0077cc;
+}
+
+.text-container p {
+  font-size: 1.1em;
+}
+
+/* Secciones de contenido */
+.about-section,
+#proyectos,
+#contacto {
+  padding: 2em;
+  background-color: #fff;
+  margin-top: 1em;
+}
+
+.about-section h2,
+#proyectos h2,
+#contacto h2 {
+  margin-top: 0;
+  color: #0077cc;
 }

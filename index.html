@@ -1,41 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Giorgina Serron</title>
-    <link rel="stylesheet" href="estilo.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Portfolio IT</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="header display-10">
-        
-        <div id="cabecera">
-        <h1> Giorgina Serron</h1>
-        <p>Estudiante de desarrollo web</p>
-        <div class="referencias">
-            <a href="#presentation text-center">Presentacion</a>
-         </div>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Menú de navegación -->
+  <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
+    <ul class="flex gap-6 justify-center">
+      <li><a href="#inicio" class="hover:text-blue-600 font-semibold">Inicio</a></li>
+      <li><a href="#sobre-mi" class="hover:text-blue-600 font-semibold">Sobre mí</a></li>
+      <li><a href="#proyectos" class="hover:text-blue-600 font-semibold">Proyectos</a></li>
+      <li><a href="#contacto" class="hover:text-blue-600 font-semibold">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección principal -->
+  <section id="inicio" class="flex flex-col md:flex-row items-center p-8 bg-white shadow-sm">
+    <!-- Imagen izquierda -->
+    <div class="md:w-1/3 mb-6 md:mb-0">
+      <img src="GIORGINA.png" alt="Mi foto" class="rounded-xl shadow-md w-full max-w-xs mx-auto"/>
     </div>
 
-
-
-    <div class="imagen col-sm-12 col-lg-3 col-md-12 text-center">
-        <img src="GIORGINA.png" id="foto"> 
+    <!-- Texto derecha -->
+    <div class="md:w-2/3 md:pl-10 text-center md:text-left">
+      <h1 class="text-3xl font-bold mb-2">Hola, soy Giorgina Serron</h1>
+      <p class="text-lg mb-4">Desarrollador Frontend | Estudiante de Diseño | Apasionado por crear productos útiles e inclusivos.</p>
+      <p class="text-gray-600">Tengo experiencia en HTML, CSS, JavaScript, Node.js, express, bootstrap. Actualmente, estoy desarrollando mi portfolio y explorando nuevas herramientas de diseño y desarrollo web.</p>
     </div>
-        <div id="presentation" class="col-sm-12 col-lg-9 col-md-12">
-            <p> Actualmente me encuentro estudiando desarrollo web en "Jovenes a programar", un programa de Plan Ceibal enfocado a jovenes de entre 20 y 30 años.</p>
-            <p>Ha sido y es una experiencia desafiante pero enriquecedora donde semana a semana desafio mis limites y crezco como desarrolladora. Cuento con el gusto de haber hecho un curso de ciberseguridad por INEFOP y Movistar donde pude aprender mucho de redes y seguridad, que me ha dado una base para comprender infraestructura.</p>
-     </div>
+  </section>
 
-        
+  <!-- Sección: Sobre mí -->
+  <section id="sobre-mi" class="p-8 bg-gray-50">
+    <h2 class="text-2xl font-bold mb-4">Sobre mí</h2>
+    <p class="mb-4">Soy una persona curiosa, organizada y empática. He trabajado en proyectos sociales, de diseño y tecnología. Me interesa desarrollar soluciones que ayuden a las personas en su día a día.</p>
+    <p>Busco oportunidades de trabajo remoto o híbrido que me permitan seguir creciendo profesionalmente en el mundo IT.</p>
+  </section>
 
- </div>
-    
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Sección: Proyectos -->
+  <section id="proyectos" class="p-8 bg-white">
+    <h2 class="text-2xl font-bold mb-4">Proyectos</h2>
+    <ul class="grid gap-6 md:grid-cols-2">
+      <li class="bg-gray-100 p-4 rounded-xl shadow-sm">
+        <h3 class="font-semibold text-lg">Proyecto artHammer</h3>
+        <p class="text-sm text-gray-600">App de subastas de arte sin comisiones, enfocada en artistas independientes.</p>
+      </li>
+      <li class="bg-gray-100 p-4 rounded-xl shadow-sm">
+        <h3 class="font-semibold text-lg">Proyecto e-commerce</h3>
+        <p class="text-sm text-gray-600">Pagina web de comercio electronico desarrollada como proyecto final en el curso Jovenes a Programar de Plan Ceibal</p>
+      </li>
+      <!-- Puedes duplicar este bloque para más proyectos -->
+    </ul>
+  </section>
 
-    
+  <!-- Sección: Contacto -->
+  <section id="contacto" class="p-8 bg-gray-50">
+    <h2 class="text-2xl font-bold mb-4">Contacto</h2>
+    <p>📧 tuemail@ejemplo.com</p>
+    <p>🌐 LinkedIn | GitHub | Portfolio</p>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 py-4">
+    © 2025 [Tu Nombre]. Todos los derechos reservados.
+  </footer>
+
 </body>
 </html>
